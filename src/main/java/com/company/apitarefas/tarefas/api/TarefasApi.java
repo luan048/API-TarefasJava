@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+// Define as rotas, e o que cada uma vai fazer
+
 @RestController
 @RequestMapping(value = "/tarefas", produces = MediaType.APPLICATION_JSON_VALUE)
 public class TarefasApi {
@@ -27,7 +29,6 @@ public class TarefasApi {
     public TarefaDTO atualizar(@PathVariable("tarefaId") Long tarefaId, @RequestBody TarefaDTO tarefaDTO) {
         return tarefasFacade.atualizar(tarefaDTO, tarefaId);
     }
-
 
     @GetMapping("/{tarefaId}")
     public TarefaDTO getById(@PathVariable("tarefaId") Long tarefaId) {

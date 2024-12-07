@@ -1,5 +1,7 @@
 package com.company.apitarefas.tarefas.dto;
 
+// Definindo os atributos da Tarefa
+
 public class TarefaDTO {
     private Long id;
     private String titulo;

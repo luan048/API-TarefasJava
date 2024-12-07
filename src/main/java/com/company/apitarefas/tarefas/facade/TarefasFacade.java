@@ -8,6 +8,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+// Definindo oq cada operação vai fazer
+
 @Service
 public class TarefasFacade {
     private static final Map<Long, TarefaDTO> tarefas = new HashMap<>();
@@ -29,7 +31,7 @@ public class TarefasFacade {
     }
 
     public List<TarefaDTO> getAllTarefas() {
-        return new ArrayList<>(tarefas.values());
+        return new ArrayList<>(tarefas.values()); // Transformando os dados que estão armazenados em lista para imprimir
     }
 
     public String remove(Long tarefaId) {
